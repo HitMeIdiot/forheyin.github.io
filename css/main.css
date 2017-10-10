@@ -1208,6 +1208,14 @@ pre .javascript .function {
 .use-motion .menu-item {
   opacity: 0;
 }
+.site-title {
+  font-family: 'Comic Sans MS', sans-serif;
+  color: #4c618f;
+}
+.logo-line-before i,
+.logo-line-after i {
+  background: #4c618f !important;
+}
 .post-body {
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
@@ -1736,19 +1744,25 @@ pre .javascript .function {
   padding: 2px;
   max-width: 96px;
   height: auto;
-  border: 2px solid #333;
+  border: site-author-image-border-color;
+/* start*/
+  border-radius: 50%;
+  webkit-transition: 1.4s all;
+  moz-transition: 1.4s all;
+  ms-transition: 1.4s all;
+  transition: 1.4s all;
+/* end */
 }
-.site-author-name {
-  margin: 5px 0 0;
-  text-align: center;
-  color: #f5f5f5;
-  font-weight: normal;
-}
-.site-description {
-  margin-top: 5px;
-  text-align: center;
-  font-size: 14px;
-  color: #999;
+.site-author-image:hover {
+  background-color: #55dae1;
+  webkit-transform: rotate(360deg) scale(1.1);
+  moz-transform: rotate(360deg) scale(1.1);
+  ms-transform: rotate(360deg) scale(1.1);
+  -webkit-transform: rotate(360deg) scale(1.1);
+  -moz-transform: rotate(360deg) scale(1.1);
+  -ms-transform: rotate(360deg) scale(1.1);
+  -o-transform: rotate(360deg) scale(1.1);
+  transform: rotate(360deg) scale(1.1);
 }
 .site-state {
   overflow: hidden;
@@ -1818,7 +1832,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #1328ff;
+  background: #ff6f08;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -1940,12 +1954,15 @@ pre .javascript .function {
 .footer {
   font-size: 14px;
   color: #999;
+  background: #fff !important;
 }
 .footer img {
   border: none;
 }
 .footer-inner {
-  text-align: center;
+  text-align: center !important;
+  font-family: 'Comic Sans MS', sans-serif;
+  color: #4c618f;
 }
 .with-love {
   display: inline-block;
